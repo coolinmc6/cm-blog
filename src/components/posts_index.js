@@ -6,7 +6,7 @@ class PostsIndex extends Component {
 		return this.props.posts.map((post) => {
 			return (
 				<li className="list-group-item" key={post.id}>
-				{post.text}
+				{post.content}
 				</li>
 			)
 		})
@@ -16,7 +16,6 @@ class PostsIndex extends Component {
 			<div>
 				POSTS INDEX
 				{this.renderPosts()}
-				<button onClick={() => this.props.history.push('/posts/new')}>New Post</button>
 			</div>
 		)
 	}
