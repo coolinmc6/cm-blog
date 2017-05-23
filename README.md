@@ -57,3 +57,9 @@ export default reduxForm({
 })(connect(null, { createPost } )(PostsNew));
 ```
 
+## Building the PostsShow component
+- I need to get the id
+- Using that id, pick the right post and then display its Title, Tag, and Content.
+  - to get all that, I need access to state
+
+- Rendering the proper post is giving me some trouble.  I need to actually think about this... 

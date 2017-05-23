@@ -7,6 +7,7 @@ import reducers from './reducers';
 import { BrowserRouter, Route } from 'react-router-dom';
 import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
+import PostsShow from './components/posts_show';
 import Header from './components/Header';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -25,8 +26,9 @@ ReactDOM.render(
 				
 				<div className="container">
 					<Route path="/" component={Header} />	
-					<Route exact path="/" component={PostsIndex}/>
 					<Route path="/posts/new" component={PostsNew}/>
+					<Route path="/posts/:id" component={PostsShow}/>
+					<Route exact path="/" component={PostsIndex}/>
 				</div>
 			</div>
 		</BrowserRouter> 
