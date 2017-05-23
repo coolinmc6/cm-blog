@@ -62,4 +62,6 @@ export default reduxForm({
 - Using that id, pick the right post and then display its Title, Tag, and Content.
   - to get all that, I need access to state
 
-- Rendering the proper post is giving me some trouble.  I need to actually think about this... 
+- Rendering the proper post is giving me some trouble.  I need to actually think about this...
+http://redux.js.org/docs/advanced/UsageWithReactRouter.html
+
