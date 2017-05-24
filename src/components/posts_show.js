@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { findByID } from '../Helpers';
+// import { findByID } from '../Helpers';
 import { fetchPost } from '../actions';
+import { Link } from 'react-router-dom';
 
 class PostsShow extends Component {
 	componentDidMount() {
@@ -11,16 +12,18 @@ class PostsShow extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container">
 				{ this.props.posts.map((post) => {
 					if(post.id == this.props.match.params.id) {
 						return (
-							<div>{post.title}</div>
+							<div key={post.id}>
+								<h2>{post.title}</h2>
+								<h4>Tag: {post.tag}</h4>
+								<p>{post.content}</p>
+							</div>
 						)	
 					} else {
-						return (
-							<div>Hello</div>
-							)
+						return '';
 					}
 					
 				})}
@@ -32,7 +35,7 @@ class PostsShow extends Component {
 }
 
 function mapStateToProps(state, ownProps) {
-	console.log(ownProps)
+	// console.log(ownProps)
 	return {
 		posts: state.posts
 	}

@@ -6,8 +6,7 @@ import { connect } from 'react-redux';
 import { generateID } from '../Helpers';
 
 class PostsNew extends Component {
-	renderField(field) {
-		console.log(field);
+	renderField(field) {		
 		return (
 			<div>
 				<label>{field.label}</label>
@@ -41,7 +40,7 @@ class PostsNew extends Component {
 				<Field name="tag" label="Tag" component={this.renderField}/>
 				<Field name="content" label="Post Content" component={this.renderTextArea}/>
 				<button type="submit" className="btn btn-primary">Submit</button>
-				<Link to="/" className="btn btn-danger">Cancel</Link>
+				<Link to="/" className="btn btn-danger cancel">Cancel</Link>
 			</form>
 		)
 	}

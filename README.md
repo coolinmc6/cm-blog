@@ -64,4 +64,10 @@ export default reduxForm({
 
 - Rendering the proper post is giving me some trouble.  I need to actually think about this...
 http://redux.js.org/docs/advanced/UsageWithReactRouter.html
+- I solved the problem another way...probably not the best way to do it but it works.
 
+**Next Steps:**
+- Add delete button to PostsShow
+- style the Add Post form better
+- NavLinks for active class
+- About Page linking to my other projects
