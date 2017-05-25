@@ -5,13 +5,36 @@ body {
 }
 
 .main {
-	padding: 0.5rem;
+	/*padding: 0.5rem;*/
+}
+
+
+.btn {
+	margin-top: 1rem;
+}
+.nav.nav-tabs {
+	position: relative;
+}
+.right {
+	position: absolute;
+	right: 0;
+}
+
+/*******************************************************************************/
+/*************************		New Post 			****************************/
+/*******************************************************************************/
+h2 {
+	margin-bottom: 2rem;
+}
+.field {
+	margin-bottom: 2rem;
 }
 
 .cancel {
 	margin-left: 1rem;
 	margin-top: 1rem;
 }
-.btn {
-	margin-top: 1rem;
+.field textarea {
+	height: 350px;
+	
 }

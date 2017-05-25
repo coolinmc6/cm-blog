@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 // import { findByID } from '../Helpers';
-import { fetchPost } from '../actions';
+import { fetchPost, deletePost } from '../actions';
 import { Link } from 'react-router-dom';
 
 class PostsShow extends Component {
 	componentDidMount() {
 		const { id } = this.props.match.params;
 		this.props.fetchPost(id)
+	}
+
+	deleteClick(id) {
+		this.props.deletePost(id);
+		this.props.history.push('/');
 	}
 
 	render() {
@@ -20,6 +25,7 @@ class PostsShow extends Component {
 								<h2>{post.title}</h2>
 								<h4>Tag: {post.tag}</h4>
 								<p>{post.content}</p>
+								<button className="btn btn-danger" onClick={() => this.deleteClick(post.id)}>Delete</button>
 							</div>
 						)	
 					} else {
@@ -40,7 +46,7 @@ function mapStateToProps(state, ownProps) {
 		posts: state.posts
 	}
 }
-export default connect(mapStateToProps, { fetchPost })(PostsShow);
+export default connect(mapStateToProps, { fetchPost, deletePost })(PostsShow);
 
 
 

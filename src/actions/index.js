@@ -18,3 +18,10 @@ export function fetchPost(id) {
 		payload: id
 	}
 }
+
+export function deletePost(id) {
+	return {
+		type: DELETE_POST, 
+		payload: id
+	}
+}

@@ -8,7 +8,7 @@ import { generateID } from '../Helpers';
 class PostsNew extends Component {
 	renderField(field) {		
 		return (
-			<div>
+			<div className="field">
 				<label>{field.label}</label>
 				<input type="text" className="form-control" {...field.input}/>
 			</div>
@@ -17,7 +17,7 @@ class PostsNew extends Component {
 	}
 	renderTextArea(field) {
 		return (
-			<div>
+			<div className="field">
 				<label>{field.label}</label>
 				<textarea type="text" className="form-control" {...field.input}></textarea>
 			</div>
@@ -35,13 +35,16 @@ class PostsNew extends Component {
 		// const { handleSubmit } = this.props
 		const handleSubmit = this.props.handleSubmit
 		return (
-			<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-				<Field name="title" label="Title" component={this.renderField}/>
-				<Field name="tag" label="Tag" component={this.renderField}/>
-				<Field name="content" label="Post Content" component={this.renderTextArea}/>
-				<button type="submit" className="btn btn-primary">Submit</button>
-				<Link to="/" className="btn btn-danger cancel">Cancel</Link>
-			</form>
+			<div className="container">
+				<h2><i className="fa fa-pencil"></i>&nbsp;Add New Post</h2>
+				<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
+					<Field name="title" label="Title" component={this.renderField}/>
+					<Field name="tag" label="Tag" component={this.renderField}/>
+					<Field name="content" label="Post Content" component={this.renderTextArea}/>
+					<button type="submit" className="btn btn-primary">Submit</button>
+					<Link to="/" className="btn btn-danger cancel">Cancel</Link>
+				</form>
+			</div>
 		)
 	}
 }

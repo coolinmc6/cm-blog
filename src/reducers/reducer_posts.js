@@ -1,4 +1,4 @@
-import { CREATE_POST, FETCH_POST } from '../actions';
+import { CREATE_POST, FETCH_POST, DELETE_POST } from '../actions';
 
 const intro = [
 	{
@@ -15,7 +15,12 @@ export default function(state = intro, action) {
 		case CREATE_POST:
 			return [...state, action.payload];
 		case FETCH_POST:
-			return [...state]
+			return [...state];
+		case DELETE_POST:
+			const delIndex = state.findIndex((item) => item.id === action.payload);
+			const newList = [...state.slice(0,delIndex),
+							...state.slice(delIndex+1)];
+			return newList;
 		default:
 			return state;
 	}
