@@ -13,7 +13,7 @@ class Header extends Component {
 								<li role="presentation"><NavLink to="/posts/new" activeClassName="selected">Add Post</NavLink></li>					
 							</ul>
 							<ul className="nav navbar-nav navbar-right">
-								<li role="presentation"><NavLink to="/" activeClassName="selected">About</NavLink></li>
+								<li role="presentation"><NavLink to="/about" activeClassName="selected">About</NavLink></li>
 												
 							</ul>
 						</div>

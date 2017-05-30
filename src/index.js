@@ -9,6 +9,7 @@ import PostsIndex from './components/posts_index';
 import PostsNew from './components/posts_new';
 import PostsShow from './components/posts_show';
 import Header from './components/Header';
+import About from './components/About';
 
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
@@ -30,6 +31,7 @@ ReactDOM.render(
 					<Route path="/posts/new" component={PostsNew}/>
 					<Route path="/posts/:id" component={PostsShow}/>
 					<Route exact path="/" component={PostsIndex}/>
+					<Route path="/about" component={About}/>
 				</Switch>
 			
 			</div>

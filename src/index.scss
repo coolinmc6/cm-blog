@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker');
+
+$lightblue: #3C91E6;
+$darkblue: #1e3888;
+$yellow: #f5e663;
+$orange: #ffad69;
+$red: #9c3848;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main {
+	/*padding: 0.5rem;*/
+}
+
+
+.btn {
+	margin-top: 1rem;
+}
+.nav.nav-tabs {
+	position: relative;
+}
+.right {
+	position: absolute;
+	right: 0;
+}
+
+/*******************************************************************************/
+/*************************		New Post 			****************************/
+/*******************************************************************************/
+h2 {
+	margin-bottom: 2rem;
+}
+.field {
+	margin-bottom: 2rem;
+}
+
+.cancel {
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+.field textarea {
+	height: 350px;
+	
+}
+
+/*******************************************************************************/
+/*************************		About 				****************************/
+/*******************************************************************************/
+
+.main.about {
+	background-color: #3C91E6;
+	margin-top: -2rem; 
+	height: 95vh;
+	padding: 1rem;
+	h1 {
+		text-align: center;
+		color: #fff; 
+		margin: 0px;
+		padding: 1rem 0rem;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 6rem; 
+	}
+	h2 {
+		color: #fff;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 4rem; 
+		
+	}
+	p {
+		color: #fff;
+		font-family: 'Arvo', serif;
+		font-size: 2.7rem; 
+	}
+	a {
+		display: inline-block;
+		padding: 0.25rem 0.5rem;
+		color: #F5E663;
+		text-decoration: none;
+		font-weight: bold; 
+		font-family: 'Permanent Marker', cursive;
+		font-size: 2.9rem; 
+	}
+}
+
+
+
