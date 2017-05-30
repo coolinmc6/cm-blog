@@ -69,7 +69,9 @@ http://redux.js.org/docs/advanced/UsageWithReactRouter.html
 **Next Steps:**
 - Add delete button to PostsShow XX
 - style the Add Post form better XX
-- About Page linking to my other projects
+- About Page linking to my other projects XX
 - Main image for front page
+- Styling for each of the pages
+- Deploy to GitHub
 
 
