@@ -73,6 +73,7 @@ http://redux.js.org/docs/advanced/UsageWithReactRouter.html
 - Deploy to GitHub XX
 - Main image for front page
 - Styling for each of the pages
+- fix-routing for GH Pages app
 
 
 
