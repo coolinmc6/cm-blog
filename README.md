@@ -74,9 +74,10 @@ http://redux.js.org/docs/advanced/UsageWithReactRouter.html
 - style the Add Post form better XX
 - About Page linking to my other projects XX
 - Deploy to GitHub XX
-- Main image for front page
-- Styling for each of the pages
-- fix-routing for GH Pages app
+- Main image for front page XX
+- Styling for each of the pages XX
+- fix-routing for GH Pages app XX
+- Validation => no blank forms
 
 
 
