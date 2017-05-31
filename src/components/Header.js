@@ -10,10 +10,10 @@ class Header extends Component {
 						<div >
 							<ul className="nav navbar-nav">
 								<li role="presentation"><NavLink to="/cm-blog" activeClassName="selected">Home</NavLink></li>
-								<li role="presentation"><NavLink to="/posts/new" activeClassName="selected">Add Post</NavLink></li>					
+								<li role="presentation"><NavLink to="/cm-blog/posts/new" activeClassName="selected">Add Post</NavLink></li>					
 							</ul>
 							<ul className="nav navbar-nav navbar-right">
-								<li role="presentation"><NavLink to="/about" activeClassName="selected">About</NavLink></li>
+								<li role="presentation"><NavLink to="/cm-blog/about" activeClassName="selected">About</NavLink></li>
 												
 							</ul>
 						</div>

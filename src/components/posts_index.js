@@ -8,7 +8,7 @@ class PostsIndex extends Component {
 			return (
 				<li className="list-group-item" key={post.id}>
 					<h4>
-						<Link to={`/posts/${post.id}`}>
+						<Link to={`/cm-blog/posts/${post.id}`}>
 						{post.title}
 						</Link>
 					</h4>

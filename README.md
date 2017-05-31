@@ -1,6 +1,8 @@
 # README
 
+- Take a look at the finished version at [https://coolinmc6.github.io/cm-blog/](https://coolinmc6.github.io/cm-blog/).
 
+## Notes
 - I can add a Header component by doing: `<Route path="/" component={Header}/>`.  If it has a slash (which
 every path will, it will show up).
 - The Redux setup process has many steps; I need to look into it again and just memorize each step.  I need to be

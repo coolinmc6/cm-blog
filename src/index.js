@@ -28,10 +28,10 @@ ReactDOM.render(
 			
 				
 				<Switch>
-					<Route path="/posts/new" component={PostsNew}/>
-					<Route path="/posts/:id" component={PostsShow}/>
+					<Route path="/cm-blog/posts/new" component={PostsNew}/>
+					<Route path="/cm-blog/posts/:id" component={PostsShow}/>
 					<Route exact path="/cm-blog" component={PostsIndex}/>
-					<Route path="/about" component={About}/>
+					<Route path="/cm-blog/about" component={About}/>
 				</Switch>
 			
 			</div>
