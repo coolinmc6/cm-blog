@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 $lightblue: #3C91E6;
 $darkblue: #1e3888;
@@ -13,9 +14,18 @@ body {
   font-family: sans-serif;
 }
 
-.main {
-	/*padding: 0.5rem;*/
+.main.index {
+	position: relative;
+	
 }
+.right {
+	position: absolute;
+	right: 0;
+}
+
+/*******************************************************************************/
+/*************************		Navigation 			****************************/
+/*******************************************************************************/
 
 
 .btn {
@@ -24,16 +34,74 @@ body {
 .nav.nav-tabs {
 	position: relative;
 }
-.right {
-	position: absolute;
-	right: 0;
+
+
+
+
+.navbar {
+	margin-bottom: 0px; 
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2rem;
+	-webkit-border-radius: 0px; 
+	 border-radius: 0px;  
 }
+
+.navbar-default {
+	background-color: $lightblue;
+	border-color: $lightblue; 
+	// border-bottom: 2px solid $darkblue;
+	
+	.navbar-nav>li>a {
+		color: $yellow;
+	}
+}
+
+/*******************************************************************************/
+/*************************		Index Page 			****************************/
+/*******************************************************************************/
+
+.welcome-text {
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	// height: 200px;
+	background-color: rgba(79, 188, 197,0.5);
+	// opacity: 0.5;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 6rem;
+	text-align: center; 
+	color: $yellow; 
+}
+
+.welcome {
+	width: 100%;
+	height: 450px;
+	background-image: url('./artwork/beach-landscape1.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: none;
+	opacity: 0.7;
+	margin-bottom: 2rem; 
+}
+
+.post-title {
+	font-size: 3rem;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.post-text {
+	font-size: 1.75rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
 
 /*******************************************************************************/
 /*************************		New Post 			****************************/
 /*******************************************************************************/
 h2 {
 	margin-bottom: 2rem;
+	font-family: 'Permanent Marker', cursive;
 }
 .field {
 	margin-bottom: 2rem;
