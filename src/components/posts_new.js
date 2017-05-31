@@ -27,7 +27,7 @@ class PostsNew extends Component {
 	onSubmit(values) {
 		values.id = generateID();
 		this.props.createPost(values)
-		this.props.history.push('/');
+		this.props.history.push('/cm-blog/');
 
 	}
 
