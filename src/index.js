@@ -30,7 +30,7 @@ ReactDOM.render(
 				<Switch>
 					<Route path="/posts/new" component={PostsNew}/>
 					<Route path="/posts/:id" component={PostsShow}/>
-					<Route exact path="/" component={PostsIndex}/>
+					<Route exact path="/cm-blog" component={PostsIndex}/>
 					<Route path="/about" component={About}/>
 				</Switch>
 			
