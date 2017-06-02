@@ -45,7 +45,7 @@ class About extends Component {
 						</tr>
 						<tr>
 							<td>
-								<a href="https://coolinmc6.github.io/CM-todo-react2/">React ToDo List #2</a>
+								<a href="https://coolinmc6.github.io/cm-todo-react2/">React ToDo List #2</a>
 							</td>
 							<td>
 								React and Redux ToDo List<br />
@@ -57,7 +57,7 @@ class About extends Component {
 						</tr>
 						<tr>
 							<td>
-								<a href="https://coolinmc6.github.io/CM-blog">React Blog  
+								<a href="https://coolinmc6.github.io/cm-blog">React Blog  
 								<span className="app"> (this app!)</span></a>
 							</td>
 							<td>
