@@ -77,7 +77,7 @@ http://redux.js.org/docs/advanced/UsageWithReactRouter.html
 - Main image for front page XX
 - Styling for each of the pages XX
 - fix-routing for GH Pages app XX
-- Validation => no blank forms
+- Validation => no blank forms XX
 
 
 

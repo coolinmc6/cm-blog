@@ -96,7 +96,7 @@ h2 {
 .main.about {
   background-color: #3C91E6;
   margin-top: -2rem;
-  height: 95vh;
+  height: 100vh;
   padding: 1rem; }
   .main.about h1 {
     text-align: center;
@@ -121,3 +121,22 @@ h2 {
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
     font-size: 2.9rem; }
+  .main.about table {
+    width: 100%; }
+  .main.about td:nth-child(1) {
+    width: 30%;
+    text-align: center;
+    vertical-align: top; }
+  .main.about td:nth-child(2) {
+    color: #fff;
+    font-family: 'Arvo', serif;
+    font-size: 2.7rem;
+    padding: 0.25rem; }
+  .main.about .app {
+    color: #9c3848;
+    font-size: 1.5rem; }
+  .main.about .explanation {
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    color: #f5e663; }
