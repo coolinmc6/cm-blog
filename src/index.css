@@ -96,7 +96,7 @@ h2 {
 .main.about {
   background-color: #3C91E6;
   margin-top: -2rem;
-  height: 100vh;
+  min-height: 100vh;
   padding: 1rem; }
   .main.about h1 {
     text-align: center;
